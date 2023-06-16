@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公告事項</title>
+    <title>首頁</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/basic.css">
-    <link rel="stylesheet" href="style/announcement.css">
+    <link rel="stylesheet" href="style/index.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
 <div class="container">
-
     <header class="header__wrapper">
         <div class="header content__wrapper">
             <div class="header__head">
@@ -52,7 +49,7 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="./announcement.html" class="nav__link nav__link-active">
+                            <a href="./announcement.html" class="nav__link">
                                 <span>公告事項</span>
                             </a>
                         </li>
@@ -72,7 +69,7 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="./price.html" class="nav__link">
+                            <a href="./price.html" class="nav__link nav__link-active">
                                 <span>價目表</span>
                             </a>
                         </li>
@@ -91,7 +88,7 @@
                     </a>
                 </li>
                 <li class="mobileNav__item">
-                    <a href="./announcement.html" class="nav__link nav__link-active">
+                    <a href="./announcement.html" class="nav__link">
                         <span>公告事項</span>
                     </a>
                 </li>
@@ -111,23 +108,38 @@
                     </a>
                 </li>
                 <li class="mobileNav__item">
-                    <a href="./price.html" class="nav__link">
+                    <a href="./price.html" class="nav__link nav__link-active">
                         <span>價目表</span>
                     </a>
                 </li>
             </ul>
         </div>
     </header>
+
     <main>
+        <div class="content__wrapper price">
+            <section class="content__section">
+                <div class="imgContainer">
+                    <img decoding="async"
+                         width="1714"
+                         height="1920"
+                         src="https://www.cengfeng.com.tw/wp-content/uploads/價目表-20221223.jpg"
+                         class="attachment-full size-full wp-image-1036"
+                         alt="" loading="lazy"
+                         srcset="https://www.cengfeng.com.tw/wp-content/uploads/價目表-20221223.jpg 1714w, https://www.cengfeng.com.tw/wp-content/uploads/價目表-20221223-268x300.jpg 268w, https://www.cengfeng.com.tw/wp-content/uploads/價目表-20221223-134x150.jpg 134w"
+                         sizes="(max-width: 1714px) 100vw, 1714px">
+                </div>
+            </section>
+            <section class="content__section">
+                <div class="content__body">
+                    <h1>園區管理規範</h1>
+                    <p>一、園區非觀光場所不對外開放，若安排安置或宗教科儀參觀園區須提前與管理處登記。<br>
+                        二、進入園區請依照現場工作人員指示參觀，嚴禁大聲喧嘩。<br>
+                        三、本園區規劃之位置及規範如有異動依管理處公告為主。
+                    </p>
+                </div>
+            </section>
 
-
-        <div class="announcement content__wrapper">
-            <ul class="announcement__list" id="AnnouncementList">
-            </ul>
-            <div class="pagination">
-                <ul id="AnnouncementPagination">
-                </ul>
-            </div>
         </div>
 
 
@@ -213,49 +225,7 @@
         </div>
     </footer>
 </div>
-
-<template id="announcement__item__template">
-    <li class="announcement__item">
-        <div class="item__head">
-            <h2 class="item__title">{title}</h2>
-        </div>
-        <div class="item__content">
-              <span class="item__time">
-                {publishDate}
-              </span>
-            <p class="item__desc">
-                {shortDesc}
-            </p>
-        </div>
-        <div class="item__foot">
-            <a class="btn btn-announcement"
-               href="./announcementDetail.html?id={id}">
-                READ MORE
-            </a>
-        </div>
-    </li>
-</template>
-<template id="pagination__pre__template">
-    <a class="pagination__item" href="{url}">
-        <li><i class="fa-solid fa-angle-left"></i></li>
-    </a>
-</template>
-<template id="pagination__page__template">
-    <a class="pagination__item" href="{url}">
-        <li>{page}</li>
-    </a>
-</template>
-<template id="pagination__page-active__template">
-        <span class="pagination__item pagination__item-active">
-            <li>{page}</li>
-        </span>
-</template>
-<template id="pagination__next__template">
-    <a class="pagination__item" href="{url}">
-        <li><i class="fa-solid fa-angle-right"></i></li>
-    </a>
-</template>
 <script src="js/basic.js"></script>
-<script src="js/announcement.js"></script>
+<script src="js/price.js"></script>
 </body>
 </html>

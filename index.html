@@ -28,41 +28,91 @@
             </div>
             <div class="header__body">
                 <div class="header__logo">
-                    <img width="1920"
-                         height="552"
-                         src="https://www.cengfeng.com.tw/wp-content/uploads/LOGO-1.png"
-                         class="custom-logo"
-                         alt="層峰生基園區"
-                         decoding="async"
-                         srcset="https://www.cengfeng.com.tw/wp-content/uploads/LOGO-1.png 1920w,
-                    https://www.cengfeng.com.tw/wp-content/uploads/LOGO-1-300x86.png 300w,
-                    https://www.cengfeng.com.tw/wp-content/uploads/LOGO-1-150x43.png 150w"
-                         sizes="(max-width: 1920px) 100vw, 1920px"/>
+                    <a href="./">
+                        <img width="1920"
+                             height="552"
+                             src="https://www.cengfeng.com.tw/wp-content/uploads/LOGO-1.png"
+                             class="custom-logo"
+                             alt="層峰生基園區"
+                             decoding="async"
+                             srcset="https://www.cengfeng.com.tw/wp-content/uploads/LOGO-1.png 1920w,
+                        https://www.cengfeng.com.tw/wp-content/uploads/LOGO-1-300x86.png 300w,
+                        https://www.cengfeng.com.tw/wp-content/uploads/LOGO-1-150x43.png 150w"
+                             sizes="(max-width: 1920px) 100vw, 1920px"/>
+                    </a>
                 </div>
                 <nav class="header__navContainer">
                     <ul class="header__nav">
                         <li class="nav__item">
-                            <a href="./" class="nav__link">首頁</a>
+                            <a href="./" class="nav__link nav__link-active">
+                                <span>首頁</span>
+                            </a>
                         </li>
                         <li class="nav__item">
-                            <a href="./announcement.html" class="nav__link">公告事項</a>
+                            <a href="./announcement.html" class="nav__link">
+                                <span>公告事項</span>
+                            </a>
                         </li>
                         <li class="nav__item">
-                            <a href="./introduction.html" class="nav__link">生基介紹</a>
+                            <a href="./introduction.html" class="nav__link">
+                                <span>生基介紹</span>
+                            </a>
                         </li>
                         <li class="nav__item">
-                            <a href="./location.html" class="nav__link">園區位置</a>
+                            <a href="./location.html" class="nav__link">
+                                <span>園區位置</span>
+                            </a>
                         </li>
                         <li class="nav__item">
-                            <a href="./detail.html" class="nav__link">種生基方法</a>
+                            <a href="./detail.html" class="nav__link">
+                                <span>種生基方法</span>
+                            </a>
                         </li>
                         <li class="nav__item">
-                            <a href="./price.html" class="nav__link">價目表</a>
+                            <a href="./price.html" class="nav__link">
+                                <span>價目表</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>
-                <div class="header__mobileNav"></div>
+                <div class="header__mobileNav">
+                    <button class="btn btn-nav" onclick="toggleMobileNav()"><i class="fa fa-bars"></i></button>
+                </div>
             </div>
+        </div>
+        <div class="mobileNav display-none" id="MobileNav">
+            <ul class="mobileNav__container" id="MobileNavContainer">
+                <li class="mobileNav__item">
+                    <a href="./" class="nav__link nav__link-active">
+                        <span>首頁</span>
+                    </a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./announcement.html" class="nav__link">
+                        <span>公告事項</span>
+                    </a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./introduction.html" class="nav__link">
+                        <span>生基介紹</span>
+                    </a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./location.html" class="nav__link">
+                        <span>園區位置</span>
+                    </a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./detail.html" class="nav__link">
+                        <span>種生基方法</span>
+                    </a>
+                </li>
+                <li class="mobileNav__item">
+                    <a href="./price.html" class="nav__link">
+                        <span>價目表</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
@@ -324,7 +374,7 @@
         </div>
     </div>
 </div>
-
+<script src="js/basic.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
