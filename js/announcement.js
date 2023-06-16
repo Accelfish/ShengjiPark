@@ -16,7 +16,7 @@ $().ready(async function() {
 })
 
 const getData = async function () {
-    let res = await fetch('../announcementList.json');
+    let res = await fetch('/ShengjiPark/announcementList.json');
     res = await res.json();
     return res.data;
 }
