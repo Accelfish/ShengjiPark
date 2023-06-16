@@ -1,0 +1,33 @@
+.location {
+    padding:20px;
+}
+
+.content__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.content__head, .content__body {
+    padding:10px;
+}
+
+.content__head p{
+    text-indent: 28px;
+}
+
+.content__head .marked{
+    font-size: 20px;
+    font-weight: inherit;
+    color: #f00;
+}
+
+.content__section--dblcol .content__head {
+    width: 50%;
+}
+
+.content__section--dblcol .content__body{
+    width: 50%;
+}

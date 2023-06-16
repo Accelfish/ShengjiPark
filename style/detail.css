@@ -1,0 +1,22 @@
+.detail{
+    padding:20px;
+}
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content__section.content__section--dblcol {
+    display: flex;
+    justify-content: center;
+
+}
+
+.content__section--dblcol .content__head {
+    width: 50%;
+}
+
+.content__section--dblcol .content__body{
+    width: 50%;
+}
+

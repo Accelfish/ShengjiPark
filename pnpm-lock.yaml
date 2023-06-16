@@ -1,0 +1,20 @@
+lockfileVersion: 5.4
+
+specifiers:
+  justifiedGallery: ^3.8.1
+
+dependencies:
+  justifiedGallery: 3.8.1
+
+packages:
+
+  /jquery/3.7.0:
+    resolution: {integrity: sha512-umpJ0/k8X0MvD1ds0P9SfowREz2LenHsQaxSohMZ5OMNEU2r0tf8pdeEFTHMFxWVxKNyU9rTtK3CWzUCTKJUeQ==}
+    dev: false
+
+  /justifiedGallery/3.8.1:
+    resolution: {integrity: sha512-qHvW4bGD9RkYYR2WfuXQK8/OdHRMTm09RJUmjWYDjAM5BS3yUpoHqXHgLjolE6m9QDReT9E6bME5YBP3VxRYtw==}
+    engines: {node: '>= 0.8.0'}
+    dependencies:
+      jquery: 3.7.0
+    dev: false
