@@ -1,5 +1,3 @@
-import 'justifiedGallery/dist/js/jquery.justifiedGallery.min.js';
-
 $('#mygallery').justifiedGallery({
     lastRow: 'justify',
     //maxRowsCount:4,
